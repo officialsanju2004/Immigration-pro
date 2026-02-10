@@ -17,7 +17,8 @@ import PropertyDetails from './Components/Pages/PropertyDetails';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import { properties } from './Components/data/properties';
-import App2 from './Components/Immigration';
+import SkyBeatImmigration from '../../client2/src/Immigration';
+
 
 function AppRouter() {
   return (
@@ -26,13 +27,13 @@ function AppRouter() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<App2 />} />
+            <Route path="/" element={<SkyBeatImmigration/>} />
             
 
-            {/* <Route path="/properties" element={<Properties />} />
+            <Route path="/properties" element={<Properties />} />
             <Route path="/property/:id" element={<PropertyDetails />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
